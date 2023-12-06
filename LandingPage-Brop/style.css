@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url(img/bg.png)
+}
+/*===== Header ===== */
+header .container{
+    max-width: 1920px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .container .logo{
+    color: #a3a3a3;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+header .container .logo ion-icon{
+color: #08da24;
+}
+
+header .container .icons {
+    color: #a3a3a3;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+header .container .icons ion-icon{
+    color: #ee2004;
+    cursor: pointer; 
+}
+
+/*===== Main ===== */
+
+main .container{
+    max-width: 1920px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: space-evenly;
+}
+main .container .menu_lateral{
+    margin-top: 120px;
+    padding: 0 20px;
+}
+main .container .menu_lateral ul li{
+    list-style: none;
+    padding: 30px 0;
+
+}
+main .container .menu_lateral ul li a{
+    text-decoration: none;
+    color: #4e4e4e;
+    font-size: 1.5rem;
+    text-shadow: -10px --5px 3px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+main .container .menu_lateral ul li a:hover{
+    color: #fff;
+    font-size: 2.6rem;
+    text-decoration: underline #e6490b;
+}
+main .container .menu_lateral .active{
+    color: #fff;
+    font-size: 2.6rem;
+    text-decoration: underline #e6490b;
+}
+main .container .chamada{
+    width: 40%;
+    height: 30vh;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: right;
+    text-shadow: -10px --5px 3px rgba(0, 0, 0, 0.8);
+    margin-top: 200px;
+}
+main .container .chamada h1{
+    font-size: 4rem;
+}
+main .container .chamada h2{
+    font-size: 2rem;
+    font-weight: 200;
+}
+main .container .chamada .button{
+    margin-top: 40px;
+    color: rgb(243, 241, 241);
+    
+}
+main .container .chamada .button button{
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #e6490b;
+    color: rgb(250, 248, 248);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    box-shadow: -10px --5px 3px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+main .container .image{
+    border-radius: 50px;
+    width: 35%;
+    height: 70vh;
+    margin-top: 20px;
+}
+main .container .image img{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .text-chamada{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+main .text-chamada .box_left,
+main .text-chamada .box_right{
+    width: 500px;
+    color: #fff;
+    padding: 0 2%;
+}
+main .text-chamada .box_left h3,
+main .text-chamada .box_right h3{
+    font-weight: 600;
+    padding: 20px 0;
+}
+main .text-chamada .box_left p,
+main .text-chamada .box_right p{
+    font-weight: 200;
+    font-style: italic;
+    color: #a3a3a3;  
+}
+    
+/*===== Responsivo ===== */
+
+@media screen and (max-width:1014){
+    main .container{
+        justify-content: space-between;
+    }   
+    main .container .menu_lateral ul li a{
+        font-size: 1rem;
+    }
+    main .container .chamada{
+        width: 40%;
+        height: 30vh;
+        text-align: center;
+    }
+    main .container .chamada h1{
+        font-size: 4rem;
+    }
+    main .container .chamada h2{
+        font-size: 3rem;
+        font-weight: 200;
+    }
+    main .container .chamada .button button{
+        font-size: 1rem;
+        color: #fff;
+    }
+    main .container .image{
+        margin-top: 120px;
+        position: relative;
+    }
+    main .container .image img{
+        width: 100%;
+        height: 60%;
+    }
+    main .text-chamada .box_left,
+    main .text-chamada .box_right{
+    width: 500px;
+    color: #fff;
+    padding: 0 2%;
+    }
+    main .text-chamada .box_left h3,
+    main .text-chamada .box_right h3{
+    font-size: 16px;
+    }
+    main .text-chamada .box_left p,
+    main .text-chamada .box_right p{
+    font-size: 15px; 
+    }
+}
+@media screen and (max-width:685px){
+    header .container .icons {
+        font-size: 1rem;
+    }
+    main .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .container .menu_lateral{
+        margin-top: 20px;
+    }
+    main .container .menu_lateral ul{
+        display:flex;
+        align-items:center;
+    }
+    main .container .menu_lateral ul li {
+       padding: 0 20px;
+    }
+    main .container .chamada{
+        margin-top: 20px;
+    }
+    main .container .image{
+        margin-top: 40px;
+        width: 50%;
+    }
+    main .text-chamada{
+       text-align: center;
+       bottom: -50px;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    main .text-chamada .box_left,
+    main .text-chamada .box_right{
+        width: 350px;
+    }
+}
+
+/*===== Formulário ===== */
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    color: white;
+}
+fieldset{
+    border: 3px solid dodgerblue;
+}
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+.inputbox{
+    position: relative;
+}
+.inputuser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5px;
+}
+.inputuser:focus ~ .labelInput,
+.inputuser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+#submit{
+    background-image: linear-gradient(#1100ff, #a000eb);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(#3f32f5, #b528f7);
+}
+.carrossel{
+    max-width: auto;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    
+}
+.carrossel .fotos{
+    width: 520%;
+    animation: animacao 10s infinite;
+}
+.carrossel .fotos img {
+    width: 19.9%;
+   
+    
+}
+@keyframes animacao{
+    0% {margin-left: 0%;}
+    20%{margin-left: 0%;}
+    25%{margin-left: 100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+    100%{margin-left: -400%;}
+}
+    
