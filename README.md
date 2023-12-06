@@ -24,6 +24,4 @@ Embark on a journey into the future of e-commerce with engaging design and impec
 
 - [CarlosEduardoBr4](https://github.com/CarlosEduardoBr04) 🚀
 
-[Explore the Project](#) (Replace "#" with the actual link to your project)
-
 _"Transform your ideas into reality. Start coding today and bring your projects to life. The journey of a thousand lines of code begins with a single keystroke."_ 🚀💻
